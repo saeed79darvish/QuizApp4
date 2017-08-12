@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">QuizApp2</string>
+    <string name="app_textinfo">This is a  soccer  info quiz please complete your information then Start Quiz</string>
+    <string name="app_textquestion">Who is this player ?</string>
+    <string name="app_edittext_hint">Name</string>
+    <string name="app_text_gender">GENDER</string>
+    <string name="app_text_male">MALE</string>
+    <string name="app_text_female">FEMALE</string>
+    <string name="question_1">question 1</string>
+    <string name="question_2">question 2</string>
+    <string name="question_3">question 3</string>
+    <string name="question_4">question 4</string>
+    <string name="question_5">question 5</string>
+    <string name="question_6">question 6</string>
+    <string name="question_7">question 7</string>
+    <string name="question_8">question 8</string>
+    <string name="question_9">question 9</string>
+    <string name="question_10">question 10</string>
+    <string name="text_messi">Messi</string>
+    <string name="text_ronaldo">Ronaldo</string>
+    <string name="text_buffon">Buffon</string>
+    <string name="text_casillas">Casillas</string>
+    <string name="text_iniesta">Iniesta</string>
+    <string name="text_cavani">Cavani</string>
+    <string name="text_ibrahimovic">Ibrahimovic</string>
+    <string name="text_levandowski">Levandowski</string>
+    <string name="text_neymar">Neymar</string>
+    <string name="text_pique">Pique</string>
+    <string name="button_submit">submit</string>
+    <string name="button_restart">Restart</string>
+    <string name="text_notgood">NOT GOOD</string>
+    <string name="text_awesome">AWESOME</string>
+
+
+</resources>

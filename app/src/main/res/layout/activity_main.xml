@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soccer4"
+    tools:context="com.example.saeed.quizapp2.MainActivity">
+
+
+    <LinearLayout
+        style="@style/LinearLayout_3_Style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/LinearLayout_3_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <include
+                android:id="@+id/Quiz_title"
+                layout="@layout/support_simple_spinner_dropdown_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/welcome" />
+
+            <TextView
+                style="@style/Question_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_textinfo" />
+
+            <LinearLayout
+                style="@style/LinearLayout_4_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/Name_Field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/app_edittext_hint"
+                    android:inputType="textCapWords" />
+
+                <TextView
+                    style="@style/Text_Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_text_gender" />
+
+                <CheckBox
+                    android:id="@+id/Whipped_Cream_Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_text_male" />
+
+                <CheckBox
+                    android:id="@+id/chocolate_Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_text_female" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_1_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_2_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/messi" />
+
+            <LinearLayout
+                style="@style/LinearLayout_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_textquestion" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RadioGroup
+            style="@style/RadioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_messi"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_messi" />
+
+            <RadioButton
+                android:id="@+id/radio_ronaldo"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_ronaldo" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            style="@style/LinearLayout_1_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_2_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/buffon" />
+
+            <LinearLayout
+                style="@style/LinearLayout_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_textquestion" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RadioGroup
+            style="@style/RadioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_buffon"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_buffon" />
+
+            <RadioButton
+                android:id="@+id/radio_casillas"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_casillas" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            style="@style/LinearLayout_1_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_2_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cavani" />
+
+            <LinearLayout
+                style="@style/LinearLayout_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_textquestion"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            style="@style/RadioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_cavani"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_cavani" />
+
+            <RadioButton
+                android:id="@+id/radio_iniesta"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_iniesta" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            style="@style/LinearLayout_1_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_4" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_2_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ibrahimovic" />
+
+            <LinearLayout
+                style="@style/LinearLayout_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_textquestion" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            style="@style/RadioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_ibrahimovic"
+                style="@style/Question4_RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_ibrahimovic" />
+
+            <RadioButton
+                android:id="@+id/radio_levandowski"
+                style="@style/Question4_RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_levandowski" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            style="@style/LinearLayout_1_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_5" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_2_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iniesta" />
+
+            <LinearLayout
+                style="@style/LinearLayout_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_textquestion"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            style="@style/RadioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_2_iniesta"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_iniesta" />
+
+            <RadioButton
+                android:id="@+id/radio_piuqe"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_pique" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            style="@style/LinearLayout_1_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_2_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/levandowski" />
+
+            <LinearLayout
+                style="@style/LinearLayout_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_textquestion"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            style="@style/RadioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_2_levandowski"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_levandowski" />
+
+            <RadioButton
+                android:id="@+id/radio_neymar"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_neymar" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            style="@style/LinearLayout_1_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_7" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_2_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/neymar" />
+
+            <LinearLayout
+                style="@style/LinearLayout_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_textquestion"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            style="@style/RadioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_2_neymar"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_neymar" />
+
+            <RadioButton
+                android:id="@+id/radio_3_iniesta"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_iniesta" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            style="@style/LinearLayout_1_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_8" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_2_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pique" />
+
+            <LinearLayout
+                style="@style/LinearLayout_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_textquestion"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RadioGroup
+            style="@style/RadioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_1_pique"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_pique" />
+
+            <RadioButton
+                android:id="@+id/radio_1_messi"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_messi" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            style="@style/LinearLayout_1_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_9" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_2_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ronaldo" />
+
+            <LinearLayout
+                style="@style/LinearLayout_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_textquestion"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            style="@style/RadioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_2_ronaldo"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_ronaldo" />
+
+            <RadioButton
+                android:id="@+id/radio_2_messi"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_messi" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            style="@style/LinearLayout_1_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_2_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/casillas" />
+
+            <LinearLayout
+                style="@style/LinearLayout_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_textquestion"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            style="@style/RadioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_2_casillas"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_casillas" />
+
+            <RadioButton
+                android:id="@+id/radio_2_buffon"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/text_buffon" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <ImageView
+                style="@style/ImageView_1_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/done" />
+
+
+            <Button
+                style="@style/Submit_Button_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="submit"
+                android:text="@string/button_submit" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+

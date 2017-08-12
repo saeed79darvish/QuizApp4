@@ -1,0 +1,113 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#f70606</item>
+        <item name="colorPrimaryDark">#fa5050</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="CategoryStyle">
+
+
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">35sp</item>
+
+
+    </style>
+
+    <style name="RadioButtonStyle">
+
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#fa0101</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Question4_RadioButtonStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#fa0101</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LinearLayout_1_Style">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">#050000</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ImageView_1_Style">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="RadioGroupStyle">
+        <item name="android:background">#fafafc</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+
+    </style>
+
+    <style name="LinearLayout_2_Style">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="LinearLayout_3_Style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Question_text">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">#031200</item>
+        <item name="android:textColor">#fafafa</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">37sp</item>
+    </style>
+    <style name="LinearLayout_4_Style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">#c0f1e4</item>
+    </style>
+    <style name="checkbox_Style">
+        <item name="android:textColor">#060000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">14dp</item>
+    </style>
+    <style name="Text_Gender">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textColor">#060000</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="Submit_Button_Style">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">#fc7303</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30sp</item>TextView_Happy_Unhappy
+    </style>
+    <style name="LinearLayout_Happy_Unhappy">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style  name="TextView_Happy_Unhappy">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+    <style name="TextView1_Happy_Unhappy">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#060000</item>
+    </style>
+
+
+</resources>
